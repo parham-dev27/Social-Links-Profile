@@ -4,15 +4,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://parham-dev27.github.io/Social Links Profile" color="white">
+    <a href="https://parham-dev27.github.io/Social-Links-Profile/" color="white">
       Live
     </a>
     <span> | </span>
-    <a href="#Solution">
+    <a href="https://www.frontendmentor.io/solutions/social-links-profile-by-parhamdev27-4nmIoWH8oQ">
       Solution
     </a>
    <span> | </span>
-    <a href="#Challenge">
+    <a href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ">
       Challenge
     </a>
   </h3>
@@ -43,4 +43,4 @@ Another great project to practice CSS. I finally had a better understanding of C
 
 ## Acknowledgments
 
-A big thank you to anyone providing feedback on my <a href="#Solution">solution</a>. It definitely helps to find new ways to code and find easier solutions!
+A big thank you to anyone providing feedback on my <a href="https://www.frontendmentor.io/solutions/social-links-profile-by-parhamdev27-4nmIoWH8oQ">solution</a>. It definitely helps to find new ways to code and find easier solutions!
