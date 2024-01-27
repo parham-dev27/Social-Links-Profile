@@ -1,0 +1,65 @@
+@forward "./util/reset";
+@use "./variables" as var;
+
+body {
+    height: 100dvh;
+    font-family: var.$font-family;
+    font-weight: map-get($map: var.$font-weight, $key: "normal");
+    font-size: var.$font-size;
+    background-color: var.$black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var.$white;
+}
+
+.card {
+    background-color: var.$dark-gray;
+    width: min(var.$mobile, calc(100dvw - 2rem));
+    padding: 1.5rem;
+    border-radius: 14px;
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 0.5rem;
+        padding-bottom: 2rem;
+    }
+    &__img {
+        width: 6rem;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+    &__name {
+        font-size: calc(var.$font-size * 2);
+        font-weight: map-get($map: var.$font-weight, $key: "bold");
+    }
+    &__location {
+        font-weight: map-get($map: var.$font-weight, $key: "bold");
+        color: var.$green;
+        margin-bottom: 1rem;
+    }
+    &__socials {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        text-align: center;
+        &--link {
+            cursor: pointer;
+            background-color: var.$gray;
+            padding: 1rem;
+            border-radius: calc(var.$font-size / 2);
+            font-weight: map-get($map: var.$font-weight, $key: "bolder");
+            transition: 0.2s color ease-in-out,
+                0.2s background-color ease-in-out;
+            &:hover,
+            &:focus-visible {
+                background-color: var.$green;
+                color: var.$black;
+            }
+        }
+    }
+}

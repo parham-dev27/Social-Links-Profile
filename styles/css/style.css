@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 400, 600, 700;
+}
+body {
+  height: 100dvh;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  width: min(375px, 100dvw - 2rem);
+  padding: 1.5rem;
+  border-radius: 14px;
+}
+.card header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+}
+.card__img {
+  width: 6rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.card__name {
+  font-size: 28px;
+  font-weight: 600;
+}
+.card__location {
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 1rem;
+}
+.card__socials {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  text-align: center;
+}
+.card__socials--link {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1rem;
+  border-radius: 7px;
+  font-weight: 700;
+  transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+}
+.card__socials--link:hover, .card__socials--link:focus-visible {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+/*# sourceMappingURL=style.css.map */
